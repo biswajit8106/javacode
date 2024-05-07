@@ -9,6 +9,7 @@ public class asorting
         n=sc.nextInt();
         int Q[]=new int[n];
         System.out.println("Enter elements in array");
+       
         for(i=0;i<n;i++)
         {
             Q[i]=sc.nextInt();
@@ -24,12 +25,13 @@ public class asorting
                 Q[j+1]=t;
             }
         }
+     
         }
         System.out.println("Array in sorted order");
         for (i=0;i<n;i++) 
         {
             System.out.println(" "+Q[i]);
         }
-        
+        sc.close(); 
     }
 }

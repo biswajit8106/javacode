@@ -19,7 +19,7 @@ class C
 
     public void calculate() 
    {
-        z = a.x * b.X + m;
+        z = a.x* B.X + m;
     }
 
     public void display() 

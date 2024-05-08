@@ -6,26 +6,26 @@ public class TwoDArrayAddition {
         int i,j,r,c;
 
     
-        System.out.println("Enter the dimensions of the arrays (rows columns):");
+        System.out.println("Enter dimensions of the arrays :");
         r = sc.nextInt();
          c = sc.nextInt();
 
         
-        int[][] arr1 = new int[r][c];
-        System.out.println("Enter elements for the first array:");
+        int arr1 [] [] = new int[r][c];
+        System.out.println("Enter elements for 1st array:");
         for ( i = 0; i < r; i++) {
             for (j = 0; j < c; j++) {
                 arr1[i][j] = sc.nextInt();
             }
         }
-        int[][] arr2 = new int[r][c];
-        System.out.println("Enter elements for the second array:");
+        int arr2 [][]  = new int[r][c];
+        System.out.println("Enter elements for 2nd array:");
         for ( i = 0; i < r; i++) {
             for ( j = 0; j < c; j++) {
                 arr2[i][j] = sc.nextInt();
             }
         }
-        int[][] sum = new int[r][c];
+        int sum[][]= new int[r][c];
         for ( i = 0; i < r; i++) {
             for ( j = 0; j < c; j++) {
                 sum[i][j] = arr1[i][j] + arr2[i][j];

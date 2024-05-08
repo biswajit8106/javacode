@@ -1,11 +1,23 @@
-//Program to find out the biggest and smallest number from a matrix.
-
+import java.util.Scanner;
 
 public class Biggest_Smallest {
     public static void main(String[] args) {
-        int matrix[][] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-        int rows = matrix.length;
-        int columns = matrix[0].length;
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Enter the number of rows:");
+        int rows = sc.nextInt();
+        System.out.println("Enter the number of columns:");
+        int columns = sc.nextInt();
+        
+        int matrix[][] = new int[rows][columns];
+        
+        System.out.println("Enter the elements of the matrix:");
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
+                matrix[i][j] = sc.nextInt();
+            }
+        }
+        
         int smallest = Integer.MAX_VALUE;
         int largest = Integer.MIN_VALUE;
         for (int i = 0; i < rows; i++) {
@@ -18,7 +30,10 @@ public class Biggest_Smallest {
                 }
             }
         }
+        
         System.out.println("Smallest element: " + smallest);
         System.out.println("Largest element: " + largest);
+        
+        sc.close();
     }
 }
